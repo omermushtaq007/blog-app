@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 }
 
 const getUsers = async (req, res) => {
-  const users = await User.find();
+  let users = await User.find();
   res.status(200).json(users);
 };
 const createUser = async (req, res) => {};

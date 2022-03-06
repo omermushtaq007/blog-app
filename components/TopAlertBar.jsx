@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export default function TopAlertBar() {
-  return (
-    <div>TopAlertBar</div>
-  )
+export default function TopAlertBar({ title }) {
+  return <div>{title}</div>;
 }
