@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema(
     emailAddress: {
       type: String,
       required: true,
-      unique: true,
+      unique: [true, 'Email address is already in use'],
     },
     isEmailVerified: {
       type: Boolean,
